@@ -1,0 +1,75 @@
+<!-- frontend/public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academix Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Academix Hub</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#resources">Resources</a>
+            <a href="#community">Community</a>
+            <button id="loginBtn" class="login-btn">Login</button>
+        </div>
+        <div class="theme-selector">
+            <label for="theme">Theme:</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Welcome to Academix Hub</h1>
+            <p>Your One-Stop Platform for Academic Resources and Project Collaboration</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search resources...">
+                <select id="collegeFilter">
+                    <option value="">Select College</option>
+                </select>
+                <select id="branchFilter">
+                    <option value="">Select Branch</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h2>Academic Resources</h2>
+            <div class="resource-categories">
+                <div class="category-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Projects</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Study Materials</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Previous Year Papers</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Academix Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
